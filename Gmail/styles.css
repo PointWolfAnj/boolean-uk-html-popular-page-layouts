@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+
+    grid-template:
+    "header header header apps" 70px
+    "inbox mail settings apps" 200px
+    "chat mail settings apps" 350px /
+    500px minmax(500px, 2fr) 150px 150px;
+}
+
+.header {
+    grid-area: header;
+    background-color: peru;
+}
+
+.inbox {
+    grid-area: inbox;
+    background-color: royalblue;
+}
+
+.chat {
+    grid-area: chat;
+    background-color: seagreen;
+}
+
+.mail {
+    grid-area: mail;
+    background-color: sienna;
+}
+
+.settings {
+    grid-area: settings;
+    background-color: springgreen;
+}
+
+.apps {
+    grid-area: apps;
+    background-color: violet;
+}

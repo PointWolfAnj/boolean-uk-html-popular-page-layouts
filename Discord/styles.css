@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+
+    grid-template: 
+    "servers header header" 50px
+    "servers channels feed" 1fr /
+    100px 150px minmax(350px, 1fr) 0px;
+}
+
+.container > div {
+    display: grid;
+    place-items: center;
+}
+
+.servers {
+    grid-area: servers;
+    background-color: navy;
+}
+
+.header {
+    grid-area: header;
+    background-color: orange;
+}
+
+.channels {
+    grid-area: channels;
+    background-color: crimson;
+}
+
+.feed {
+    grid-area: feed;
+    background-color: palegreen;
+}

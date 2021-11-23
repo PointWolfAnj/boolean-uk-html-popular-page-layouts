@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+
+    grid-template:
+    "header header header" 50px
+    "profile feed news" 1fr
+    "organisations feed follow" 50px /
+    100px 3fr minmax(350px, 1fr) 0px;
+}
+
+.header {
+    grid-area: header;
+    background-color: violet;
+}
+
+.profile {
+    grid-area: profile;
+    background-color: aquamarine;
+}
+.feed {
+    grid-area: feed;
+    background-color: blanchedalmond;
+}
+
+.news {
+    grid-area: news;
+    background-color: cadetblue;
+}
+
+.organisations {
+    grid-area: organisations;
+    background-color: crimson;
+}
+
+.feed {
+    grid-area: feed;
+    background-color: darkmagenta;
+}
+
+.follow {
+    grid-area: follow;
+    background-color: darkorange;
+}
